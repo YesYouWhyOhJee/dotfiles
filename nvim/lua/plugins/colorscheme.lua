@@ -54,11 +54,21 @@ return {
 			},
 		},
 	},
+	{
+		"vague2k/vague.nvim",
+		name = "vague",
+		config = function()
+			-- NOTE: you do not need to call setup if you don't want to.
+			require("vague").setup({
+				-- optional configuration here
+			})
+		end,
+	},
 
 	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "catppuccin",
+			colorscheme = "vague",
 		},
 	},
 }
